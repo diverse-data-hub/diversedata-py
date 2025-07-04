@@ -20,8 +20,12 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 `diversedata` was created by Katie Burak, Elham E. Khoda, and Stephanie Ta. It is licensed under the terms of the MIT license and Creative Commons Attribution 4.0 International license.
 
+This repository includes code originally developed as part of the palmerpenguins Python package project, licensed under the MIT License. See [palmerpenguins/LICENSE](https://github.com/mcnakhaee/palmerpenguins/blob/master/LICENSE) for details.
+
 Data sets used in this project are licensed by their respective original creators, as indicated on each data set’s individual page. These data sets may have been adapted for use within this project.
 
 ## Credits
 
 `diversedata` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
+This project includes code adapted from the [palmerpenguins](https://github.com/allisonhorst/palmerpenguins) Python package, which is distributed under the MIT License.
