@@ -18,7 +18,9 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`diversedata` was created by Katie Burak, Elham E. Khoda, and Stephanie Ta. It is licensed under the terms of the MIT license.
+`diversedata` was created by Katie Burak, Elham E. Khoda, and Stephanie Ta. It is licensed under the terms of the MIT license and Creative Commons Attribution 4.0 International license.
+
+Data sets used in this project are licensed by their respective original creators, as indicated on each data set’s individual page. These data sets may have been adapted for use within this project.
 
 ## Credits
 
