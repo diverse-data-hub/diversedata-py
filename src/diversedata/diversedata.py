@@ -1,7 +1,5 @@
 import pandas as pd
 import pkg_resources
-import os
-from os.path import dirname, exists, expanduser, isdir, join, splitext
 
 def load_data(data_name: str):
     """
