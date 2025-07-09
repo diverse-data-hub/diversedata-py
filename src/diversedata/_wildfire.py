@@ -41,8 +41,8 @@ def load_wildfire():
     fire_fighting_start_date : 	Date when firefighting activities officially started.
     fire_fighting_start_size : Fire size at the time firefighting began in hectares.
     bucketing_on_fire : Whether aerial bucketing was used on the fire.
-    first_bh_date : Date of first blackline containment.
-    first_bh_size : Fire size at time of first blacklining in hectares.
+    first_bh_date : Date when fire was first declared being held.
+    first_bh_size : Fire size when fire was first declared being held in hectares.
     first_uc_date : Date when fire was first declared under control.
     first_uc_size : Fire size when first declared under control in hectares.
     first_ex_size_perimeter : Estimated fire perimeter at the time of first extinguishment in kilometers.
