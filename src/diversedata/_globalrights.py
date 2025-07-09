@@ -1,5 +1,3 @@
-## check out difference in variables from R and .csv!!!!!
-
 from diversedata import load_data
 
 def load_globalrights():
@@ -16,16 +14,16 @@ def load_globalrights():
 
     Variables
     ----------
-    year : Observation year.
+    year : Year of observation.
     country : Country name.
-    country-code : Three letter country code.
-    gdp-per-capita : GDP per capita.
-    education-spending-gdp : Government education spending as % of GDP.
-    same-sex-marriage : Legal status of same-sex marriage.
-    lgbtq-censorship : Presence of censorship related to LGBT+ content.
-    employment-discrimination
-    gender-affirming-care : Availability of gender-affirming care.
-    legal-gender : Right to change legal gender
+    country-code : ISO 3-letter country code.
+    gdp-per-capita : Gross Domestic Product per capita.
+    education-spending-gdp : Government education spending as a percentage of GDP.
+    same-sex-marriage : Legal status of same-sex marriage (e.g., "Legal", "Unrecognized").
+    lgbtq-censorship : Whether LGBTQ+ content is censored or restricted.
+    employment-discrimination : Whether anti-discrimination protections exist for LGBTQ+ individuals in employment.
+    gender-affirming-care : Availability and legal access to gender-affirming healthcare.
+    legal-gender : Whether legal gender can be changed and under what conditions.
 
     Source
     ------
