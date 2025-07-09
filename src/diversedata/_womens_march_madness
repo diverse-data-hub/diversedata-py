@@ -47,7 +47,7 @@ def load_womens_march_madness():
     Original story (Louisiana Tech Was the UConn of the '80s): 
     https://fivethirtyeight.com/features/louisiana-tech-was-the-uconn-of-the-80s/
 
-    Examples
+    Example
     --------
     >>> import diversedata as dd
     >>> df = dd.load_womens_march_madness()

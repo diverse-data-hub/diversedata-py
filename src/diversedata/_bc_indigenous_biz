@@ -33,7 +33,7 @@ def load_bc_indigenous_biz():
     available under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
     https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc
 
-        Examples
+    Example
     --------
     >>> import diversedata as dd
     >>> df = dd.load_bc_indigenous_biz()

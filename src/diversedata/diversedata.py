@@ -24,7 +24,7 @@ def load_data(data_name: str):
     FileNotFoundError
         If data_name cannot be found in the installed package.
 
-    Examples
+    Example
     --------
     >>> import diversedata as dd
     >>> df = dd.load_data("wildfire")
@@ -41,3 +41,7 @@ def load_data(data_name: str):
     data = pd.read_csv(stream)
 
     return data
+
+
+
+# function to list what data is avaliable and the functions that correspond to them
