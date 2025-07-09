@@ -1,5 +1,5 @@
 import pandas as pd
-import pkg_resources
+import importlib.resources as resources
 
 def load_data(data_name: str):
     """
@@ -32,33 +32,47 @@ def load_data(data_name: str):
        year     fire_number     current_size  ...
     0  2006     PWF001          0.1           ...
     """
-    # check if data is in this package
-    if not pkg_resources.resource_exists(__name__, data_name):
-        raise FileNotFoundError(f"{data_name} is not found in the {__name__} package.")
+    # Get the root package name
+    package_name = __name__.split('.')[0]
     
-    # access file in package
-    stream = pkg_resources.resource_stream(__name__, "data/", data_name, ".csv") 
-    data = pd.read_csv(stream)
-
-    return data
+    # Construct the file path
+    file_path = f"data/{data_name}.csv"
+    
+    try:
+        # Use importlib.resources to access the file in this package
+        with resources.open_text(package_name, file_path) as file:
+            data = pd.read_csv(file)
+        return data
+    except FileNotFoundError:
+        raise FileNotFoundError(f"{data_name}.csv is not found in the {package_name} package.")
 
 def list_available_datasets():
     """
     Prints a list of the data available in this package and
     which function loads the data.
     """
-    data_dir = "data"
-    files = pkg_resources.resource_listdir(__name__, data_dir)
-    csv_files = [f for f in files if f.endswith('.csv')]
-
-    if not csv_files:
-        print("No datasets found.")
+    # Get the root package name
+    package_name = __name__.split('.')[0]
+    
+    try:
+        # List files in the data directory
+        data_files = resources.files(package_name).joinpath("data")
+        
+        # Get all CSV files
+        csv_files = [f.name for f in data_files.iterdir() if f.name.endswith('.csv')]
+        
+        if not csv_files:
+            print("No datasets found.")
+            return None
+            
+        # List all files in the 'data' directory of this package
+        print("Available datasets:\n")
+        for file in sorted(csv_files):
+            dataset_name = file.replace(".csv", "")
+            print(f"• {dataset_name}")
+            print(f"  Load with:    load_data('{dataset_name}')\n")
+            print(f"  View documentation with:  help(load_data)\n")
+            
+    except FileNotFoundError:
+        print("Data directory not found in package.")
         return None
-
-    # List all files in the 'data' directory of this package
-    print("Available datasets:\n")
-    for file in sorted(csv_files):
-        dataset_name = file.replace(".csv", "")
-        print(f"• {dataset_name}")
-        print(f"  Load with:    load_{dataset_name}()\n")
-        print(f"  View documentation with:  help(load_{dataset_name})\n")

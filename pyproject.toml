@@ -5,9 +5,12 @@ description = "A Python package that provides a curated collection of real-world
 authors = ["Katie Burak, Elham E. Khoda, and Stephanie Ta"]
 license = "MIT"
 readme = "README.md"
+packages = [{ include = "diversedata" }]
+include = [path = "diversedata/data/*.csv"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pandas = "^2.3.1"
 
 [tool.semantic_release]
 version_toml = [
