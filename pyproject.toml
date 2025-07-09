@@ -5,8 +5,8 @@ description = "A Python package that provides a curated collection of real-world
 authors = ["Katie Burak, Elham E. Khoda, and Stephanie Ta"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "diversedata" }]
-include = [path = "diversedata/data/*.csv"]
+packages = [{ include = "diversedata", from = "src" }]
+include = ["diversedata/data/*.csv"]
 
 [tool.poetry.dependencies]
 python = "^3.12"

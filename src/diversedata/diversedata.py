@@ -70,8 +70,8 @@ def list_available_datasets():
         for file in sorted(csv_files):
             dataset_name = file.replace(".csv", "")
             print(f"• {dataset_name}")
-            print(f"  Load with:    load_data('{dataset_name}')\n")
-            print(f"  View documentation with:  help(load_data)\n")
+            print(f"  Load with:    load_{dataset_name}()")
+            print(f"  View documentation with:  help(load_{dataset_name})\n")
             
     except FileNotFoundError:
         print("Data directory not found in package.")
