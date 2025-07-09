@@ -28,8 +28,8 @@ def load_data(data_name: str):
 
     Examples
     --------
-    >>> from diversedata import load_data
-    >>> df = load_data("wildfire")
+    >>> import diversedata as dd
+    >>> df = dd.load_data("wildfire")
     >>> df.head()
        year     fire_number     current_size  ...
     0  2006     PWF001          0.1           ...
