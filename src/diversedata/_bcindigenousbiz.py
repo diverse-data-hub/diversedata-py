@@ -30,7 +30,6 @@ def load_bcindigenousbiz():
    Notes
    -----
    Data is licensed under the Open Government Licence - British Columbia:
-   available under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
    https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc
 
    Example
