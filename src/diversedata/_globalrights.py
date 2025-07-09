@@ -28,17 +28,14 @@ def load_globalrights():
     Source
     ------
     Our World in Data. Detailed indicators compiled from:
-    Gender-affirming care : https://ourworldindata.org/grapher/gender-affirming-care
-    Same-sex marriage : https://ourworldindata.org/grapher/marriage-same-sex-partners-equaldex
-    Employment discrimination : https://ourworldindata.org/grapher/employment-discrimination-lgbt-equaldex
-    Censorship : https://ourworldindata.org/grapher/censorship-of-lgbt-issues
-    Legal gender change : https://ourworldindata.org/grapher/right-to-change-legal-gender-equaldex
     GDP per capita : https://ourworldindata.org/grapher/gdp-per-capita-worldbank
     Education spending : https://ourworldindata.org/grapher/total-government-expenditure-on-education-gdp
-    Fertility rate : https://ourworldindata.org/grapher/children-born-per-woman
-    Gini Index : https://ourworldindata.org/grapher/economic-inequality-gini-index
-    Human rights index : https://ourworldindata.org/grapher/human-rights-index-vdem
-
+    Same-sex marriage : https://ourworldindata.org/grapher/marriage-same-sex-partners-equaldex
+    Censorship : https://ourworldindata.org/grapher/censorship-of-lgbt-issues
+    Employment discrimination : https://ourworldindata.org/grapher/employment-discrimination-lgbt-equaldex
+    Gender-affirming care : https://ourworldindata.org/grapher/gender-affirming-care
+    Legal gender change : https://ourworldindata.org/grapher/right-to-change-legal-gender-equaldex
+    
     Notes
     -----
     Data sourced from Our World in Data is available under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
