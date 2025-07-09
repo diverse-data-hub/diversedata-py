@@ -42,6 +42,23 @@ def load_data(data_name: str):
 
     return data
 
+def list_available_datasets():
+    """
+    Prints a list of the data available in this package and
+    which function loads the data.
+    """
+    data_dir = "data"
+    files = pkg_resources.resource_listdir(__name__, data_dir)
+    csv_files = [f for f in files if f.endswith('.csv')]
 
+    if not csv_files:
+        print("No datasets found.")
+        return None
 
-# function to list what data is avaliable and the functions that correspond to them
+    # List all files in the 'data' directory of this package
+    print("Available datasets:\n")
+    for file in sorted(csv_files):
+        dataset_name = file.replace(".csv", "")
+        print(f"• {dataset_name}")
+        print(f"  Load with:    load_{dataset_name}()\n")
+        print(f"  View documentation with:  help(load_{dataset_name})\n")
