@@ -1,6 +1,6 @@
 from diversedata import load_data
 
-def load_womens_march_madness():
+def load_womensmarchmadness():
     """
     Returns the NCAA Women's March Madness Tournament Dataset as a pandas.DataFrame.
     This function takes no arguments.
@@ -50,7 +50,7 @@ def load_womens_march_madness():
     Example
     --------
     >>> import diversedata as dd
-    >>> df = dd.load_womens_march_madness()
+    >>> df = dd.load_womensmarchmadness()
     >>> df.head()
        year     school          seed  ...
     0  1982     Arizona St.     4     ...

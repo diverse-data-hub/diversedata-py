@@ -1,6 +1,6 @@
 from diversedata import load_data
 
-def load_bc_indigenous_biz():
+def load_bcindigenousbiz():
     """
     Returns the BC Indigenous Business Directory (1910-2021) as a pandas.DataFrame.
     This function takes no arguments.
@@ -36,7 +36,7 @@ def load_bc_indigenous_biz():
     Example
     --------
     >>> import diversedata as dd
-    >>> df = dd.load_bc_indigenous_biz()
+    >>> df = dd.load_bcindigenousbiz()
     >>> df.head()
        business_name        city            latitude    ...
     0  Ellipsis Energy Inc  Moberly Lake    55.8193701  ...
