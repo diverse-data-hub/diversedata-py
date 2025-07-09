@@ -51,7 +51,7 @@ def load_womens_march_madness():
     --------
     >>> import diversedata as dd
     >>> df = dd.load_womens_march_madness()
-    >>> dadfta.head()
+    >>> df.head()
        year     school          seed  ...
     0  1982     Arizona St.     4     ...
     """
