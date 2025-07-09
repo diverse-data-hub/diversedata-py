@@ -20,15 +20,15 @@ def load_womensmarchmadness():
    conf_losses : Number of conference losses.
    conf_wins_pct : Conference win percentage.
    conf_rank : Conference ranking.
-   division : NCAA division.
-   reg_wins : Number of regular season wins.
-   reg_losses : Number of regular season losses.
-   reg_wins_pct : Regular season win percentage.
-   bid : Type of tournament bid (e.g., "at-large" or "automatic").
-   first_game_at_home : Indicates if the first tournament game was played at home.
+   division : Conference division.
+   reg_wins : Number of regional wins.
+   reg_losses : Number of regional losses.
+   reg_wins_pct : Regional win percentage.
+   bid : Whether the school qualified with an automatic bid (by winning its conference or conference tournament) or an at-large bid ("auto" or "at-large").
+   first_game_at_home : Whether the school played its first-round tournament games on its home court ('Y' or 'N').
    tourney_wins : Number of tournament wins.
    tourney_losses : Number of tournament losses.
-   tourney_finish : Final round reached in the tournament (e.g., "Sweet 16", "Final Four").
+   tourney_finish : The final round reached in the tournament (e.g. 'opening_round_loss','first_round_loss', 'top_2_loss', 'champ').
    total_wins : Total wins in the season.
    total_losses : Total losses in the season.
    total_wins_pct : Overall win percentage for the season.
