@@ -2,7 +2,6 @@ import pandas as pd
 import pytest
 from io import StringIO
 from diversedata import load_data
-from importlib import resources
 from unittest import mock
 
 # Expected case
