@@ -3,7 +3,6 @@
 MIT License
 
 Copyright (c) 2025 Katie Burak, Elham E. Khoda, and Stephanie Ta
-Copyright (c) 2020 Muhammad Chenariyan Nakhaee ([palmerpenguins](https://github.com/mcnakhaee/palmerpenguins))
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
