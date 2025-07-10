@@ -1,1 +1,0 @@
-from diversedata import diversedata
