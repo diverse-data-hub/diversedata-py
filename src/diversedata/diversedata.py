@@ -171,7 +171,7 @@ def list_available_datasets():
             has_description = desc_file.is_file()
 
             print(f"• {dataset_name}")
-            print(f"  Load with:    load_data('{dataset_name}')")
+            print(f"  Load with:                load_data('{dataset_name}')")
             if has_description:
                 print(f"  View documentation with:  print_data_description('{dataset_name}')")
             else:
