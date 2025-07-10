@@ -3,21 +3,23 @@ import importlib.resources as resources
 
 def load_data(data_name: str):
     """
-    Returns a pandas.DataFrame of a .csv file that is bundled in this package.
+    Returns a pandas.DataFrame of a .csv file that is bundled in this
+    package.
 
-    Looks for data_name.csv in this package's resources (in the data directory)
-    and raises an error if data_name is not a string or if the file is missing.
+    Looks for data_name.csv in this package's resources (in the data
+    directory) and raises an error if data_name is not a string or if
+    the file is missing.
 
     Parameters
     ----------
     data_name : str
-        The filename (excluding the .csv extension) of the data
-        resource to load.
+        The filename (excluding the .csv extension) of the data resource to
+        load.
 
     Returns
     -------
     pandas.DataFrame
-        A DataFrame containing the parsed contents of data_name.
+        A DataFrame with the contents of data_name.csv.
 
     Raises
     ------
@@ -36,34 +38,39 @@ def load_data(data_name: str):
     """
     # Raise TypeError if data_name is not a string
     if not isinstance(data_name, str):
-        raise TypeError(f"{data_name} must be a string with no file extension.")
-    
+        raise TypeError(
+            f"{data_name} must be a string with no file extension.")
+
     # Get the root package name
     package_name = __name__.split('.')[0]
-    
+
     # Construct the file path
     file_path = f"data/{data_name}.csv"
-    
+
     try:
         # Use importlib.resources to access the file in this package
         with resources.files(package_name).joinpath(file_path).open("r", encoding="utf-8") as data_file:
             data = pd.read_csv(data_file)
         return data
     except FileNotFoundError:
-        raise FileNotFoundError(f"{data_name}.csv is not found in the {package_name} package.")
+        raise FileNotFoundError(
+            f"{data_name}.csv is not found in the {package_name} package.")
 
 def print_data_description(data_name: str):
     """
-    Prints the description of a dataset contained in a .txt file that is bundled in this package
+    Prints the description of a dataset contained in a .txt file that is
+    bundled in this package.
 
-    Looks for data_name.txt in this package's resources (in the data_descriptions directory)
-    and raises an error if data_name is not a string or if the file is missing.
+    Looks for data_name.txt in this package's resources (in the
+    data_descriptions directory) and raises an error if data_name is not a
+    string or if the file is missing.
 
     Parameters
     ----------
     data_name : str
-        The filename (excluding the .txt extension) of the data description file to print.
-
+        The filename (excluding the .txt extension) of the data description
+        file to print.
+        
     Raises
     ------
     TypeError
@@ -81,14 +88,15 @@ def print_data_description(data_name: str):
     """
     # Raise TypeError if data_name is not a string
     if not isinstance(data_name, str):
-        raise TypeError(f"{data_name} must be a string with no file extension.")
-    
+        raise TypeError(
+            f"{data_name} must be a string with no file extension.")
+
     # Get the root package name
     package_name = __name__.split('.')[0]
 
     # Construct the file path
     file_path = f"data_descriptions/{data_name}.txt"
-    
+
     try:
         # Use importlib.resources to access the file in this package
         with resources.files(package_name).joinpath(file_path).open('r', encoding='utf-8') as description_file:
@@ -138,18 +146,19 @@ def list_available_datasets():
     """
     # Get the root package name
     package_name = __name__.split('.')[0]
-    
+
     try:
         # List files in the data directory
         data_files = resources.files(package_name).joinpath("data")
-        
+
         # Get all CSV files
-        csv_files = [f.name for f in data_files.iterdir() if f.name.endswith('.csv')]
-        
+        csv_files = [f.name for f in data_files.iterdir()
+                     if f.name.endswith('.csv')]
+
         if not csv_files:
             print("No datasets found.")
             return None
-            
+
         # List all files in the 'data' directory of this package
         print("Available datasets:\n")
         for file in sorted(csv_files):
@@ -157,7 +166,7 @@ def list_available_datasets():
             print(f"• {dataset_name}")
             print(f"  Load with:    load_{dataset_name}()")
             print(f"  View documentation with:  help(load_{dataset_name})\n")
-            
+
     except FileNotFoundError:
         print("Data directory not found in package.")
         return None
