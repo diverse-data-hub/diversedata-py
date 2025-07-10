@@ -1,8 +1,9 @@
 NCAA Women's March Madness Tournament Dataset.
 
-This dataset provides historical information on team performance in the NCAA Women's Basketball Tournament.
-It includes game outcomes, seedings, regular and conference season records, tournament progress,
-and overall win/loss statistics. The data is useful for analyzing performance trends,
+This dataset provides historical information on team performance in the
+NCAA Women's Basketball Tournament. It includes game outcomes, seedings,
+regular and conference season records, tournament progress, and overall
+win/loss statistics. The data is useful for analyzing performance trends,
 comparing team outcomes across years, and modeling tournament predictions.
 
 Variables
@@ -19,11 +20,16 @@ division : Conference division.
 reg_wins : Number of regional wins.
 reg_losses : Number of regional losses.
 reg_wins_pct : Regional win percentage.
-bid : Whether the school qualified with an automatic bid (by winning its conference or conference tournament) or an at-large bid ("auto" or "at-large").
-first_game_at_home : Whether the school played its first-round tournament games on its home court ('Y' or 'N').
+bid : Whether the school qualified with an automatic bid (by winning its
+      conference or conference tournament) or an at-large bid ("auto" or
+      "at-large").
+first_game_at_home : Whether the school played its first-round tournament
+                     games on its home court ('Y' or 'N').
 tourney_wins : Number of tournament wins.
 tourney_losses : Number of tournament losses.
-tourney_finish : The final round reached in the tournament (e.g. 'opening_round_loss','first_round_loss', 'top_2_loss', 'champ').
+tourney_finish : The final round reached in the tournament (e.g.
+                 'opening_round_loss', 'first_round_loss', 'top_2_loss',
+                 'champ').
 total_wins : Total wins in the season.
 total_losses : Total losses in the season.
 total_wins_pct : Overall win percentage for the season.
@@ -35,8 +41,9 @@ https://github.com/fivethirtyeight/data/tree/master/ncaa-womens-basketball-tourn
 
 Notes
 -----
-Data sourced from FiveThirtyEight's NCAA Women's Basketball Tournament dataset is
-available under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
+Data sourced from FiveThirtyEight's NCAA Women's Basketball Tournament
+dataset is available under the Creative Commons Attribution 4.0
+International License (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/
 
 Original story (Louisiana Tech Was the UConn of the '80s): 

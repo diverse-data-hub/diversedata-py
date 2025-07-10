@@ -1,16 +1,21 @@
 How Couples Meet and Stay Together (HCMST) - 2022 Wave data.
 
-This dataset is derived from the 2022 wave of the longitudinal HCMST study, conducted by researchers at Stanford University.
-The study explores how romantic relationships are formed and sustained in the United States, with a focus on relationship quality,
-social context, and the effects of major external events like the COVID-19 pandemic.
+This dataset is derived from the 2022 wave of the longitudinal HCMST
+study, conducted by researchers at Stanford University. The study
+explores how romantic relationships are formed and sustained in the
+United States, with a focus on relationship quality, social context, and
+the effects of major external events like the COVID-19 pandemic.
 
-The dataset includes demographic characteristics, relationship context, couple behavior, and pandemic-related experiences,
-making it well-suited for studies on interpersonal dynamics, inequality, and resilience in romantic partnerships.
+The dataset includes demographic characteristics, relationship context,
+couple behavior, and pandemic-related experiences, making it well-suited
+for studies on interpersonal dynamics, inequality, and resilience in
+romantic partnerships.
 
 Variables
 ----------
 subject_age : Subject age.
-subject_education : Highest degree obtained (e.g. "no_education", "11th", "masters_degree")
+subject_education : Highest degree obtained (e.g. "no_education", "11th",
+                    "masters_degree").
 subject_sex : Subject gender identity.
 subject_ethnicity : Ethnic background.
 subject_income_category : Household income category.
@@ -22,7 +27,8 @@ flirts_with_partner : Frequency of flirting with partner.
 fights_with_partner : Frequency of conflict with partner.
 relationship_duration : Length of relationship in years.
 children : Number of children in the household.
-rel_change_during_pandemic : Relationship change during the COVID-19 pandemic.
+rel_change_during_pandemic : Relationship change during the COVID-19
+                              pandemic.
 inc_change_during_pandemic : Income change due to the pandemic.
 subject_had_covid : Whether the subject had COVID-19.
 partner_had_covid : Whether the subject's partner had COVID-19.
@@ -38,8 +44,9 @@ https://data.stanford.edu/hcmst2017
 
 Notes
 -----
-Distributed under a data use agreement. Do not use this dataset to identify individuals.
-Please cite appropriately in publications and reports.
+Distributed under a data use agreement. Do not use this dataset to
+identify individuals. Please cite appropriately in publications and reports.
+
 Citation: Rosenfeld, Michael J., Reuben J. Thomas, and Sonia Hausen. 2023.
     How Couples Meet and Stay Together 2017-2020-2022 Combined Dataset. Stanford, CA: Stanford University Libraries.
     https://data.stanford.edu/hcmst2017
