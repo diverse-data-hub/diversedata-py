@@ -103,7 +103,8 @@ def print_data_description(data_name: str):
             description = description_file.read()
             print(description, end='')
     except FileNotFoundError:
-        print("{data_name}.txt is not found in the {package_name} package.")
+        raise FileNotFoundError(
+            f"{data_name}.txt is not found in the {package_name} package.")
 
 
 def list_available_datasets():
@@ -179,5 +180,5 @@ def list_available_datasets():
             print()
 
     except FileNotFoundError:
-        print("Data directory not found in package.")
-        return None
+        raise FileNotFoundError(
+            "Data directory not found in package.")
