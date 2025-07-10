@@ -3,7 +3,7 @@ import importlib.resources as resources
 
 def load_data(data_name: str):
     """
-    Returns a pandas.DataFrame of a CSV file that is bundled in this package.
+    Returns a pandas.DataFrame of a .csv file that is bundled in this package.
 
     Looks for data_name.csv in this package's resources and 
     raises an error if the file is missing.
@@ -22,7 +22,7 @@ def load_data(data_name: str):
     Raises
     ------
     FileNotFoundError
-        If data_name cannot be found in the installed package.
+        If data_name cannot be found in this package.
 
     Example
     --------
