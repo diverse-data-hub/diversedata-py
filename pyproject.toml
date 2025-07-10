@@ -6,7 +6,7 @@ authors = ["Katie Burak, Elham E. Khoda, and Stephanie Ta"]
 license = "MIT"
 readme = "README.md"
 packages = [{ include = "diversedata", from = "src" }]
-include = ["diversedata/data/*.csv"]
+include = ["diversedata/data/*.csv", "diversedata/data_descriptions/*.txt"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
