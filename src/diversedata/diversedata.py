@@ -48,8 +48,41 @@ def load_data(data_name: str):
 
 def list_available_datasets():
     """
-    Prints a list of the data available in this package and
-    which function loads the data.
+    Prints a list of available datasets in this package and their corresponding loader function.
+
+    Scans the data/ subpackage for .csv files included in this
+    package. For each dataset found, prints:
+
+    - The dataset name (excluding the .csv extension)
+    - The function to load the dataset (e.g., load_<datasetname>())
+    - The method to view the dataset documentation (e.g., help(load_<datasetname>))
+
+    Assumes datasets are stored as .csv files in the data/ subpackage.
+
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None
+        Prints dataset information.
+        Prints "No datasets found." if there are no datasets in the data/ subpackage.
+        Prints "Data directory not found in package." if the data/ subpackage is not found.
+
+    Raises
+    ------
+    None
+
+    Examples
+    --------
+    >>> import diversedata as dd
+    >>> dd.list_available_datasets()
+    Available datasets:
+    • wildfire
+      Load with:    load_wildfire()
+      View documentation with:  help(load_wildfire)
+    ...
     """
     # Get the root package name
     package_name = __name__.split('.')[0]
