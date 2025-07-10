@@ -9,8 +9,11 @@ packages = [{ include = "diversedata", from = "src" }]
 include = ["diversedata/data/*.csv", "diversedata/data_descriptions/*.txt"]
 
 [tool.poetry.dependencies]
-python = "^3.12"
-pandas = "^2.3.1"
+python = ">=3.12"
+pandas = ">=2.3.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
 
 [tool.semantic_release]
 version_toml = [
