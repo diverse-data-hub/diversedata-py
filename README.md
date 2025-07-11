@@ -1,8 +1,14 @@
-# diversedata
+# diversedata <img src="img/logo.png" align="right" width="49"/>
 
-A Python package that provides a curated collection of real-world data sets centered on themes of equity, diversity and inclusion (EDI). These data sets are intended to support teaching, learning, and analysis by offering meaningful and socially relevant data that can be used in data science workflows.
+`diversedata` is a Python package that provides a curated collection of real-world data sets centered on themes of equity, diversity and inclusion (EDI). These data sets are intended to support teaching, learning, and analysis by offering meaningful and socially relevant data that can be used in data science workflows.
+
+Each data set includes contextual background and documentation to support thoughtful exploration. Example use cases are included to demonstrate practical applications in R.
+
+For more information, please visit: <https://diverse-data-hub.github.io/>
 
 ## Installation
+
+The `diversedata` Python package can be installed via pip:
 
 ```bash
 $ pip install diversedata
@@ -10,7 +16,28 @@ $ pip install diversedata
 
 ## Usage
 
-- TODO
+Once installed, you can explore the available data sets and their documentation:
+
+```python
+import diversedata as dd
+
+# List available datasets
+dd.list_available_datasets()
+
+# View documentation for a specific dataset
+dd.print_data_description('wildfire')
+
+# To load a dataset and save it to an object:
+df = dd.load_data('wildfire')
+```
+
+## Package Dependencies
+
+This package has the following dependency:
+
+- `pandas>=2.3.1`
+
+Please note that this package will be installed when pip installing this package.
 
 ## Contributing
 
