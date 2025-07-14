@@ -47,25 +47,40 @@ Ready to contribute? Here's how to set up `diversedata` for local development.
 2. Create and activate a conda environment for `diversedata`:
 
     ```console
-    $ conda create -n diversedata python=3.12
-    $ conda activate diversedata
+    conda create -n diversedata python=3.12
+    conda activate diversedata
     ```
 
-3. Install `diversedata` using `poetry`:
+3. Install `poetry`, a tool for managing packages and dependencies:
 
     ```console
-    $ poetry install
+    pip install poetry=2.1
     ```
 
-4. Use `git` (or similar) to create a branch for local development and make your changes:
+4. Install `diversedata` using `poetry`:
 
     ```console
-    $ git checkout -b name-of-your-bugfix-or-feature
+    poetry install
     ```
 
-5. When you're done making changes, check that your changes conform to any code formatting requirements and pass any tests.
+5. Use `git` (or similar) to create a branch for local development and make your changes:
 
-6. Commit your changes and open a pull request.
+    ```console
+    git checkout -b name-of-your-bugfix-or-feature
+    ```
+
+6. When you're done making changes, check that your changes conform to any code formatting requirements and pass any tests.
+
+7. Commit your changes and open a pull request.
+
+## Adding A New Data Set
+
+To add a new data set to this package:
+
+1. Place the data set's `.csv` file in the `src/diversedata/data/` directory.
+2. Place the data set's description in a `.txt` file in the `src/diversedata/data_descriptions/` directory.
+3. Ensure both files have the same root filename (i.e., the part before the file extension). This name will be used to load the dataset and display its description when using the package.
+4. Commit your changes and open a pull request.
 
 ## Pull Request Guidelines
 
