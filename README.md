@@ -11,7 +11,7 @@ For more information, please visit: <https://diverse-data-hub.github.io/>
 The `diversedata` Python package can be installed via pip:
 
 ```bash
-$ pip install diversedata
+pip install diversedata
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ This package has the following dependency:
 
 - `pandas>=2.3.1`
 
-Please note that this dependency will be installed when pip installing this package.
+Please note that this dependency will be installed automatically when pip installing this package.
 
 ## Contributing
 
