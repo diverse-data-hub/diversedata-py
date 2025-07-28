@@ -9,6 +9,7 @@ civil liberties.
 
 Terminology is aligned with the United Nations' "Free and Equal"
 campaign for LGBTIQ+ equality.
+
 Variables
 ----------
 year : Year of observation.
