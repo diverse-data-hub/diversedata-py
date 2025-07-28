@@ -2,7 +2,7 @@
 
 `diversedata` is a Python package that provides a curated collection of real-world data sets centered on themes of equity, diversity and inclusion (EDI). These data sets are intended to support teaching, learning, and analysis by offering meaningful and socially relevant data that can be used in data science workflows.
 
-Each data set includes contextual background and documentation to support thoughtful exploration. Example use cases are included to demonstrate practical applications in R.
+Each data set includes contextual background and documentation to support thoughtful exploration. Example use cases are included to demonstrate practical applications in R and Python are available on the [website](https://diverse-data-hub.github.io/).
 
 For more information, please visit: <https://diverse-data-hub.github.io/>
 
