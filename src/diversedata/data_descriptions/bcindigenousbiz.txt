@@ -13,12 +13,12 @@ city : City where the business is located.
 latitude : Latitude coordinate of the business.
 longitude : Longitude coordinate of the business.
 region : Geographic region within British Columbia.
-type : Type or structure of the business (e.g., "sole proprietorship",
-       "corporation").
-industry_sector : Primary industry sector of the business.
-year_formed : Year the business was officially formed (ranging from
+type : Ownership type of the business (e.g., "Private Company",
+       "Community Owned Company", "Partnership").
+industry_sector : Industry classification based on NAICS or a similar standard.
+year_formed : Year in which the business was established (ranging from
               1910 to 2021).
-number_of_employees : Approximate number of employees.
+number_of_employees : Size category representing the number of employees.
 
 Source
 ------
