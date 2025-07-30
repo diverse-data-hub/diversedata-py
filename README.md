@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/diverse-data-hub/diversedata-py/graph/badge.svg?token=OO2HCJBWU1)](https://codecov.io/gh/diverse-data-hub/diversedata-py)
+[![codecov](https://codecov.io/gh/diverse-data-hub/diversedata-py/branch/main/graph/badge.svg?token=OO2HCJBWU1)](https://codecov.io/gh/diverse-data-hub/diversedata-py)
 
 # diversedata <img src="https://raw.githubusercontent.com/diverse-data-hub/diversedata-py/main/img/logo.png" align="right" width="49"/>
 
