@@ -1,6 +1,14 @@
 name: ci-cd
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - codecov-ci-cd
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:  # manual trigger
 
 jobs:
   ci:
