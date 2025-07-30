@@ -1,4 +1,6 @@
-# diversedata <img src="img/logo.png" align="right" width="49"/>
+[![codecov](https://codecov.io/gh/diverse-data-hub/diversedata-py/graph/badge.svg?token=OO2HCJBWU1)](https://codecov.io/gh/diverse-data-hub/diversedata-py)
+
+# diversedata <img src="https://raw.githubusercontent.com/diverse-data-hub/diversedata-py/main/img/logo.png" align="right" width="49"/>
 
 `diversedata` is a Python package that provides a curated collection of real-world data sets centered on themes of equity, diversity and inclusion (EDI). These data sets are intended to support teaching, learning, and analysis by offering meaningful and socially relevant data that can be used in data science workflows.
 
