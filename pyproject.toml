@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "diversedata"
-version = "0.0.0"
+version = "0.1.0"
 description = "A Python package that provides a curated collection of real-world data sets centered on themes of equity, diversity and inclusion (EDI). These data sets are intended to support teaching, learning, and analysis by offering meaningful and socially relevant data that can be used in data science workflows."
 authors = ["Katie Burak, Elham E. Khoda, and Stephanie Ta"]
 license = "MIT"
