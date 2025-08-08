@@ -1,4 +1,4 @@
-Gender Assessment 2024 Dataset.
+Gender Assessment 2024 Dataset. 
 
 This data set comes from the World Benchmarking Alliance's 2024 Gender
 Assessment. It evaluates over 2,000 companies on their performance
