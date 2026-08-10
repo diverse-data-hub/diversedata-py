@@ -1,0 +1,37 @@
+Labour Force Status for Adults with Disabilities Dataset (2012).
+
+This dataset contains detailed records regarding the labour force status of adults with disabilities in Canada for the year 2012. It includes information broken down by geography, sex, age group, disability type, and the global severity of the disability, compiled by Statistics Canada. The dataset supports research and analysis on employment and labour force participation rates among demographic groups experiencing various types and severities of disabilities.
+
+Variables
+----------
+geography : Geographic location or province of the respondents in Canada.
+sex : Gender of the respondents (e.g., Males, Females).
+age_group : Age bracket of the respondents.
+disability_type : Specific type of disability reported (e.g., "All disability types", "Mobility", "Flexibility", "Pain").
+global_severity : Classification of the severity of the reported disability (e.g., "Mild", "Moderate", "Severe", "Very Severe").
+labour_force_status : The employment or labour force participation status of the group (e.g., "Total labour force", "Employed", "Participation rate").
+value : The reported numerical value corresponding to the specific demographic and labour force status.
+
+Source
+------
+Statistics Canada, Labour force status for adults with disabilities by disability type:
+https://open.canada.ca/data/en/dataset/92aeb8dc-c7ca-4f44-81df-fdaf289d23fd
+
+Notes
+-----
+Data sourced from Statistics Canada is available under the
+Open Government Licence – Canada:
+https://open.canada.ca/en/open-government-licence-canada
+
+Examples
+--------
+>>> import diversedata as dd
+>>> df = dd.load_data("labourforcewithdisabilities")
+>>> df.head()
+    geography                  sex      age_group      ...
+0   Newfoundland and Labrador  Males    15 to 24 years ...
+
+>>> dd.print_data_description("labourforcewithdisabilities")
+Labour Force Status for Adults with Disabilities Dataset (2012).
+
+This dataset contains detailed records regarding the labour force...
