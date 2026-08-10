@@ -5,7 +5,7 @@ This dataset contains detailed records regarding the labour force status of adul
 Variables
 ----------
 geography : Geographic location or province of the respondents in Canada.
-sex : Gender of the respondents (e.g., Males, Females).
+sex : Sex of the respondents (e.g., Males, Females).
 age_group : Age bracket of the respondents.
 disability_type : Specific type of disability reported (e.g., "All disability types", "Mobility", "Flexibility", "Pain").
 global_severity : Classification of the severity of the reported disability (e.g., "Mild", "Moderate", "Severe", "Very Severe").
