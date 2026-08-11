@@ -32,3 +32,7 @@
   - city names: removed periods and commas, removed "B.C."/"BC", applied capwords, replaced spaces larger than one space with one space, removed trailing and leading spaces, and fixed known typos.
   - ownership types: converted ': Community Owned Company' and 'Community Owned' to 'Community Owned Company', and converted 'Partnershp' to 'Partnership'
   - number of employees data: converted ' ' to nan, removed any leading and trailing spaces, and converted '55 to 99' to '50 to 99' since the range '55 to 99' overlaps with the more frequent '50 to 99'.
+
+## v1.0.5 (11/08/2026)
+- Add Post Grad Income dataset and description. 
+- Add Labour Force dataset and description. 
