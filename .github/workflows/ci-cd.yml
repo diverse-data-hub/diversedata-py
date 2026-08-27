@@ -78,7 +78,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release -vv version
+          semantic-release version
 
       - name: Publish to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
