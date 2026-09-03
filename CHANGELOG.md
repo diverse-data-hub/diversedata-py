@@ -35,4 +35,4 @@
 
 ## v1.0.5 (11/08/2026)
 - Add Post Grad Income dataset and description. 
-- Add Labour Force dataset and description. 
+- Add Labour Force dataset and description.
