@@ -1,0 +1,44 @@
+Air Quality
+
+This database contains information on air quality in Vancouver, including particulate matter,
+greenhouse gases, and more, at hourly resolution. This data is available on Open Meteo, and
+is compiled from multiple sources, including the Copernicus Atmosphere Monitoring Service
+(CAMS) ENSEMBLE data provider. The data can be accessed through the
+[Open Meteo website](https://open-meteo.com/en/docs/air-quality-api) or via API call under the CC BY 4.0 data licence.
+
+Variables
+----------
+time : Date and time of day
+day_of_week : Day of the week
+hour : Hour of day
+is_weekend : Boolean True/False for weekend day versus weekday
+pm10 : Concentration of particulate matter with diameter smaller than 10 µm (PM10) close to surface (10 meter above ground)
+pm2_5 : Concentration of particulate matter with diameter smaller than 2.5 µm (PM2.5) close to surface (10 meter above ground)
+nitrogen_dioxide : Concentration of the atmospheric gas nitrogen dioxide close to surface (10 meter above ground)
+us_aqi : United States Air Quality Index (AQI) calculated for different particulate matter and gases individually. The consolidated us_aqi returns the maximum of all individual indices. Ranges from 0-50 (good), 50-100 (moderate), 100-150 (unhealthy for sensitive groups), 150-200 (unhealthy), 200-300 (very unhealthy) and 300-500 (hazardous). 
+
+Source
+------
+Open Meteo via API 
+https://open-meteo.com/en/docs/air-quality-api
+
+Notes
+-----
+Licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0). 
+https://creativecommons.org/licenses/by/4.0/
+
+Examples
+--------
+>>> import diversedata as dd
+>>> df = dd.load_data("air quality")
+>>> df.head()
+                time pm10 pm2_5 nitrogen_dioxide us_aqi hour day_of_week is_weekend
+0 2023-09-01 00:00:00 22.9  14.9             10.4     57    0      Friday      FALSE
+
+>>> dd.print_data_description("air quality")
+Air Quality
+
+This database contains information on air quality in Vancouver...
+
+
+
